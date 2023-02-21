@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <html lang="eng">
+    <head>
+       <link rel="stylesheet" href="webpage.css">
+    </head>
+    <body>
+       <form>
+           <fieldset>
+               <legend>Vos coordonnées</legend>
+               <table>
+                 <tr>
+                <td><label for="Nom">Nom :</label></td>
+                     <td><input type="text" name="Nom" placeholder="votre nom" required minlength="6" maxlength="15"/></td>
+                    </tr>
+                 <tr> 
+                    <td><label for="Prénom">Prénom :</label></td>
+                    <td><input type="text" name="Prénom"placeholder="votr prenom" required minlength="10" maxlength="15"/></td>
+                 </tr>
+                 <tr>  
+                    <td><label for="dn">date de naissance :</label></td>
+                    <td><input type="date" name="dn"/></td>
+                 </tr>
+                 <tr>  
+                    <td><label for="Mail">Mail :</label></td>
+                    <td><input type="email" name="Mail"placeholder="votre mail"/></td>
+                 </tr>
+                 <tr>
+                    <td><label for="VS">Votre site :</label></td>
+                    <td><input type="text" name="VS"  required minlength="5" maxlength="8"/></td>
+                 </tr>
+                 <tr>
+                    <td><label for="CODE ">CODE:</label></td>
+                     <td><input type="password" name="CODE"  required minlength="8" maxlength="15"/></td>
+                 </tr>
+                 <tr>
+                      <td rowspan="2"><label for="Genre">Genre:</label></td>
+                      <td><input type="radio" id="Genre" name="Genre" value="Homme"/>Homme</td>
+                 </tr>
+                 <tr>
+                  <td><input type="radio" id="Genre" name="Genre" value="Femme"/>Femme</tf>
+                 </tr>
+                 <tr>
+                     <td><label for="pays">pays:</label></td>
+                     <td><select name="pays"> 
+                        <option value="Egypt"selected>Egypt</option>
+                        <option value="Algerie"selected>Algerie</option>
+                        <option value="Maroc"selected>Maroc</option>
+                        <option value="Tunisie"selected>Tunisie</option>
+                        <option value="">Votre pays</option>
+                    </select></td>
+                 </tr>
+               </table>
+           </fieldset>
+           <fieldset>
+            <legend>Vos gouts</legend>
+            <input type="checkbox" id="Tarte aux fraises à la créme d'amandes" name="Tarte aux fraises à la créme d'amandes" value="Tarte aux fraises à la créme d'amandes"/>
+            <label for="Tarte aux fraises à la créme d'amandes">Tarte aux fraises à la créme d'amandes</label><br>
+            <input type="checkbox" id="Tarte au prunes " name="Tarte au prunes" value="Tarte au prunes"/>
+            <label for="Tarte au prunes">Tarte au prunes</label>
+            <br>
+            <input type="checkbox" id="Tarte rustique aux mirabelles de lorraine, noisette et miel " name="Tarte rustique aux mirabelles de lorraine, noisette et miel" value="Tarte rustique aux mirabelles de lorraine, noisette et miel"/>
+            <label for="Tarte rustique aux mirabelles de lorraine, noisette et miel">Tarte rustique aux mirabelles de lorraine, noisette et miel</label>
+            <br>
+            <label for="text" ></label>
+             <textarea id="text" name="text" rows="6" cols="33">
+            Decriver vos gouts en détail
+            </textarea>
+           </fieldset>
+            <fieldset>
+               <legend>Envoyer nous votre photo</legend>
+               <input type="file" name="fileuplowad" accept="image"/>
+               <label for="image"></label>
+               <br>
+               <br>
+               
+               <input type="reset" value="Effacer"/>
+                <input type="submit" value="Envoyer"/>
+
+            </fieldset>
+        </form>    
+    </body>        
+</html>               
